@@ -1,4 +1,5 @@
 .DS_Store
-env
+venv
 note.txt
 __pycache__
+db.sqlite3

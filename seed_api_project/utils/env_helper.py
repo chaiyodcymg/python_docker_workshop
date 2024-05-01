@@ -1,17 +1,16 @@
 import environ
 import os
-
+from seed_api_project.settings import BASE_DIR
 class ENVHelper:
 
     def __init__(self):
-        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
-        self.env = environ.Env()
+        self.__env = environ.Env()
     
     def get(self, envName, type = "string"):
         try:
             if(type == 'int'):
-                return int(self.env(envName))
-            return self.env(envName)
+                return int(self.__env(envName))
+            return self.__env(envName)
         except:
-            return self.env(envName)
+            return self.__env(envName)
