@@ -1,6 +1,3 @@
-# pip3 install django
-# pip3 install djangorestframework
-
 FROM python:3.10-slim
 
 WORKDIR /app

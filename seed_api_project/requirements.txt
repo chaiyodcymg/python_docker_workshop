@@ -1,2 +1,9 @@
 Django==5.0.4
 djangorestframework==3.15.1
+pandas==2.2.2
+drf_yasg
+pymongo
+django-environ
+djangorestframework_simplejwt
+pycryptodome
+pyjwt
